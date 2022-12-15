@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ main, revamp ]
   repository_dispatch:
-    types: [ update ]
+    # types: [ update ]
 
 permissions:
   contents: write
