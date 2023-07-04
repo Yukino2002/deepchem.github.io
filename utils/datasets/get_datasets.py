@@ -15,9 +15,13 @@ filteredDatasetURLs = {}
 fromPath = "../../deepchem/data/datasets/"
 toPath = "../../deepchem/data/datasetsCSV/"
 finalPath = "../../deepchem/data/datasetsJSON/"
-# os.makedirs(fromPath)
-# os.makedirs(toPath)
-# os.makedirs(finalPath)
+
+try:   
+    os.makedirs(fromPath)
+    os.makedirs(toPath)
+    os.makedirs(finalPath)
+except:
+    print("COuld not create directories")
 
 
 # Scrape the datasets from the deepchem github repo for the dataset URLs
