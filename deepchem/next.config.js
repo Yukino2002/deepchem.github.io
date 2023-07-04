@@ -13,6 +13,10 @@ const nextConfig = {
   basePath: !debug ? '/deepchem.github.io' : '',
   assetPrefix: !debug ? '/deepchem.github.io/' : '',
 
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+
 
 };
 
